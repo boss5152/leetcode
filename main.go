@@ -3,8 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-
-	problems "github.com/boss5152/leetcode"
+	"leetcode/problems"
 )
 
 var flagInt int
@@ -25,18 +24,15 @@ func main() {
 		t := "nagaram"
 		ans := problems.IsAnagram(s, t)
 		fmt.Print(ans)
-		break
 	case 344:
 		s := []byte("hello")
 		ans := problems.ReverseString(s)
 		fmt.Print(ans)
-		break
 	case 389:
 		s := "abcd"
 		t := "abcde"
 		ans := problems.FindTheDifference(s, t)
 		fmt.Print(ans)
-		break
 	case 412:
 		n := 15
 		ans := problems.FizzBuzz(n)
