@@ -41,6 +41,10 @@ func main() {
 		s := "Let's take LeetCode contest"
 		ans := problems.ReverseWords(s)
 		fmt.Print(ans)
+	case 657:
+		s := "LL"
+		ans := problems.JudgeCircle(s)
+		fmt.Print(ans)
 	default:
 		problems.Learn()
 	}
