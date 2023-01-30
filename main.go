@@ -9,7 +9,7 @@ import (
 var flagInt int
 
 func init() {
-	flag.IntVar(&flagInt, "Id", 12, "Please Enter Id")
+	flag.IntVar(&flagInt, "Id", 0, "Please Enter Id")
 	flag.Parse()
 }
 
@@ -18,6 +18,10 @@ func main() {
 	case 3:
 		s := "pwwkew"
 		ans := problems.LengthOfLongestSubstring(s)
+		fmt.Print(ans)
+	case 136:
+		s := []int{2, 2, 1}
+		ans := problems.SingleNumber(s)
 		fmt.Print(ans)
 	case 242:
 		s := "anagram"
