@@ -23,6 +23,10 @@ func main() {
 		s := []int{2, 2, 1}
 		ans := problems.SingleNumber(s)
 		fmt.Print(ans)
+	case 137:
+		s := []int{0, 1, 0, 1, 0, 1, 99}
+		ans := problems.SingleNumber2(s)
+		fmt.Print(ans)
 	case 242:
 		s := "anagram"
 		t := "nagaram"
