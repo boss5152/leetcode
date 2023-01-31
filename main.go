@@ -32,6 +32,10 @@ func main() {
 		t := "nagaram"
 		ans := problems.IsAnagram(s, t)
 		fmt.Print(ans)
+	case 338:
+		n := 5
+		ans := problems.CountBits(n)
+		fmt.Print(ans)
 	case 344:
 		s := []byte("hello")
 		ans := problems.ReverseString(s)
