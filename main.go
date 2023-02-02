@@ -48,6 +48,11 @@ func main() {
 		s := []byte("hello")
 		ans := problems.ReverseString(s)
 		fmt.Print(ans)
+	case 349:
+		nums1 := []int{1, 2, 2, 1}
+		nums2 := []int{2, 2}
+		ans := problems.Intersection(nums1, nums2)
+		fmt.Print(ans)
 	case 389:
 		s := "abcd"
 		t := "abcde"
