@@ -23,6 +23,10 @@ func main() {
 		slice := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
 		ans := problems.RemoveDuplicates(slice)
 		fmt.Print(ans)
+	case 108:
+		slice := []int{-10, -3, 0, 5, 9}
+		ans := problems.SortedArrayToBST(slice)
+		fmt.Print(ans)
 	case 136:
 		s := []int{2, 2, 1}
 		ans := problems.SingleNumber(s)
