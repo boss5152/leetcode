@@ -19,6 +19,10 @@ func main() {
 		s := "pwwkew"
 		ans := problems.LengthOfLongestSubstring(s)
 		fmt.Print(ans)
+	case 26:
+		slice := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
+		ans := problems.RemoveDuplicates(slice)
+		fmt.Print(ans)
 	case 136:
 		s := []int{2, 2, 1}
 		ans := problems.SingleNumber(s)
