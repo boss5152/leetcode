@@ -1,6 +1,6 @@
 package problems
 
-func Intersection(nums1 []int, nums2 []int) []int {
+func Intersection349(nums1 []int, nums2 []int) []int {
 	map1 := make(map[int]struct{})
 	ans := []int{}
 

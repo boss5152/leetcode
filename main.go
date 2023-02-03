@@ -51,7 +51,7 @@ func main() {
 	case 349:
 		nums1 := []int{1, 2, 2, 1}
 		nums2 := []int{2, 2}
-		ans := problems.Intersection(nums1, nums2)
+		ans := problems.Intersection349(nums1, nums2)
 		fmt.Print(ans)
 	case 389:
 		s := "abcd"
@@ -69,6 +69,14 @@ func main() {
 	case 657:
 		s := "LL"
 		ans := problems.JudgeCircle(s)
+		fmt.Print(ans)
+	case 2248:
+		slice := [][]int{
+			{3, 1, 2, 4, 5},
+			{1, 2, 3, 4},
+			{3, 4, 5, 6},
+		}
+		ans := problems.Intersection2248(slice)
 		fmt.Print(ans)
 	default:
 		problems.Learn()
