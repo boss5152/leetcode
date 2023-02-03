@@ -62,6 +62,10 @@ func main() {
 		n := 15
 		ans := problems.FizzBuzz(n)
 		fmt.Print(ans)
+	case 500:
+		slice := []string{"Hello", "Alaska", "Dad", "Peace"}
+		ans := problems.FindWords(slice)
+		fmt.Print(ans)
 	case 557:
 		s := "Let's take LeetCode contest"
 		ans := problems.ReverseWords(s)
