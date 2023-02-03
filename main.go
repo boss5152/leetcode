@@ -66,6 +66,10 @@ func main() {
 		s := "Let's take LeetCode contest"
 		ans := problems.ReverseWords(s)
 		fmt.Print(ans)
+	case 561:
+		slice := []int{6, 2, 6, 5, 1, 2}
+		ans := problems.ArrayPairSum(slice)
+		fmt.Print(ans)
 	case 657:
 		s := "LL"
 		ans := problems.JudgeCircle(s)
