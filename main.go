@@ -17,102 +17,83 @@ func main() {
 	switch flagInt {
 	case 3:
 		s := "pwwkew"
-		ans := problems.LengthOfLongestSubstring(s)
-		fmt.Print(ans)
+		fmt.Println(problems.LengthOfLongestSubstring(s))
 	case 26:
 		slice := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
-		ans := problems.RemoveDuplicates(slice)
-		fmt.Print(ans)
+		fmt.Println(problems.RemoveDuplicates(slice))
 	case 39:
 		candidates := []int{2, 3, 6, 7}
 		target := 7
-		ans := problems.CombinationSum(candidates, target)
-		fmt.Print(ans)
+		fmt.Println(problems.CombinationSum(candidates, target))
 	case 108:
 		slice := []int{-10, -3, 0, 5, 9}
-		ans := problems.SortedArrayToBST(slice)
-		fmt.Print(ans)
+		fmt.Println(problems.SortedArrayToBST(slice))
 	case 136:
 		s := []int{2, 2, 1}
-		ans := problems.SingleNumber(s)
-		fmt.Print(ans)
+		fmt.Println(problems.SingleNumber(s))
 	case 137:
 		s := []int{0, 1, 0, 1, 0, 1, 99}
-		ans := problems.SingleNumber2(s)
-		fmt.Print(ans)
+		fmt.Println(problems.SingleNumber2(s))
 	case 169:
 		nums := []int{3, 2, 3}
-		ans := problems.MajorityElement(nums)
-		fmt.Print(ans)
+		fmt.Println(problems.MajorityElement(nums))
 	case 242:
 		s := "anagram"
 		t := "nagaram"
-		ans := problems.IsAnagram(s, t)
-		fmt.Print(ans)
+		fmt.Println(problems.IsAnagram(s, t))
 	case 338:
 		n := 5
-		ans := problems.CountBits(n)
-		fmt.Print(ans)
+		fmt.Println(problems.CountBits(n))
 	case 344:
 		s := []byte("hello")
-		ans := problems.ReverseString(s)
-		fmt.Print(ans)
+		fmt.Println(problems.ReverseString(s))
 	case 349:
 		nums1 := []int{1, 2, 2, 1}
 		nums2 := []int{2, 2}
-		ans := problems.Intersection349(nums1, nums2)
-		fmt.Print(ans)
+		fmt.Println(problems.Intersection349(nums1, nums2))
 	case 389:
 		s := "abcd"
 		t := "abcde"
-		ans := problems.FindTheDifference(s, t)
-		fmt.Print(ans)
+		fmt.Println(problems.FindTheDifference(s, t))
 	case 412:
 		n := 15
-		ans := problems.FizzBuzz(n)
-		fmt.Print(ans)
+		fmt.Println(problems.FizzBuzz(n))
 	case 496:
 		nums1 := []int{1, 3, 5, 2, 4}
 		nums2 := []int{5, 4, 3, 2, 1}
-		ans := problems.NextGreaterElement(nums1, nums2)
-		fmt.Print(ans)
+		fmt.Println(problems.NextGreaterElement(nums1, nums2))
 	case 500:
 		slice := []string{"Hello", "Alaska", "Dad", "Peace"}
-		ans := problems.FindWords(slice)
-		fmt.Print(ans)
+		fmt.Println(problems.FindWords(slice))
 	case 557:
 		s := "Let's take LeetCode contest"
-		ans := problems.ReverseWords(s)
-		fmt.Print(ans)
+		fmt.Println(problems.ReverseWords(s))
 	case 561:
 		slice := []int{6, 2, 6, 5, 1, 2}
-		ans := problems.ArrayPairSum(slice)
-		fmt.Print(ans)
+		fmt.Println(problems.ArrayPairSum(slice))
 	case 657:
 		s := "LL"
-		ans := problems.JudgeCircle(s)
-		fmt.Print(ans)
+		fmt.Println(problems.JudgeCircle(s))
 	case 771:
 		jewels := "aA"
 		stones := "aAAbbbb"
-		ans := problems.NumJewelsInStones(jewels, stones)
-		fmt.Print(ans)
+		fmt.Println(problems.NumJewelsInStones(jewels, stones))
 	case 905:
 		nums := []int{3, 1, 2, 4}
-		ans := problems.SortArrayByParity(nums)
-		fmt.Print(ans)
+		fmt.Println(problems.SortArrayByParity(nums))
 	case 1217:
 		position := []int{1, 2, 3}
-		ans := problems.MinCostToMoveChips(position)
-		fmt.Print(ans)
+		fmt.Println(problems.MinCostToMoveChips(position))
+	case 1221:
+		s := "RLRRLLRLRL"
+		fmt.Println(problems.BalancedStringSplit(s))
 	case 2248:
 		slice := [][]int{
 			{3, 1, 2, 4, 5},
 			{1, 2, 3, 4},
 			{3, 4, 5, 6},
 		}
-		ans := problems.Intersection2248(slice)
-		fmt.Print(ans)
+		fmt.Println(problems.Intersection2248(slice))
 	default:
 		problems.Learn()
 	}
