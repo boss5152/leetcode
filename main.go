@@ -40,6 +40,10 @@ func main() {
 		s := []int{0, 1, 0, 1, 0, 1, 99}
 		ans := problems.SingleNumber2(s)
 		fmt.Print(ans)
+	case 169:
+		nums := []int{3, 2, 3}
+		ans := problems.MajorityElement(nums)
+		fmt.Print(ans)
 	case 242:
 		s := "anagram"
 		t := "nagaram"
