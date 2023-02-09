@@ -67,6 +67,11 @@ func main() {
 		n := 15
 		ans := problems.FizzBuzz(n)
 		fmt.Print(ans)
+	case 496:
+		nums1 := []int{1, 3, 5, 2, 4}
+		nums2 := []int{5, 4, 3, 2, 1}
+		ans := problems.NextGreaterElement(nums1, nums2)
+		fmt.Print(ans)
 	case 500:
 		slice := []string{"Hello", "Alaska", "Dad", "Peace"}
 		ans := problems.FindWords(slice)
