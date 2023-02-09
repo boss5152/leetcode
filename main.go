@@ -92,6 +92,19 @@ func main() {
 		s := "LL"
 		ans := problems.JudgeCircle(s)
 		fmt.Print(ans)
+	case 771:
+		jewels := "aA"
+		stones := "aAAbbbb"
+		ans := problems.NumJewelsInStones(jewels, stones)
+		fmt.Print(ans)
+	case 905:
+		nums := []int{3, 1, 2, 4}
+		ans := problems.SortArrayByParity(nums)
+		fmt.Print(ans)
+	case 1217:
+		position := []int{1, 2, 3}
+		ans := problems.MinCostToMoveChips(position)
+		fmt.Print(ans)
 	case 2248:
 		slice := [][]int{
 			{3, 1, 2, 4, 5},
