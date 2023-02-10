@@ -90,6 +90,9 @@ func main() {
 	case 1323:
 		num := 9669
 		fmt.Println(problems.Maximum69Number(num))
+	case 2160:
+		num := 2932
+		fmt.Println(problems.MinimumSum(num))
 	case 2248:
 		slice := [][]int{
 			{3, 1, 2, 4, 5},
