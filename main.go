@@ -90,6 +90,9 @@ func main() {
 	case 1323:
 		num := 9669
 		fmt.Println(problems.Maximum69Number(num))
+	case 1827:
+		nums := []int{1, 5, 2, 4, 1}
+		fmt.Println(problems.MinOperations(nums))
 	case 2160:
 		num := 2932
 		fmt.Println(problems.MinimumSum(num))
