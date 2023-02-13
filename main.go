@@ -103,6 +103,13 @@ func main() {
 			{3, 4, 5, 6},
 		}
 		fmt.Println(problems.Intersection2248(slice))
+	case 2482:
+		slice := [][]int{
+			{0, 1, 1},
+			{1, 0, 1},
+			{0, 0, 1},
+		}
+		fmt.Println(problems.OnesMinusZeros(slice))
 	default:
 		problems.Learn()
 	}
