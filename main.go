@@ -86,6 +86,9 @@ func main() {
 	case 905:
 		nums := []int{3, 1, 2, 4}
 		fmt.Println(easy.SortArrayByParity(nums))
+	case 961:
+		nums := []int{1, 2, 3, 3}
+		fmt.Println(easy.RepeatedNTimes(nums))
 	case 1217:
 		position := []int{1, 2, 3}
 		fmt.Println(easy.MinCostToMoveChips(position))

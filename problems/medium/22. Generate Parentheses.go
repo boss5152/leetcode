@@ -7,14 +7,14 @@ import (
 var result *[][]string
 
 func GenerateParenthesis(n int) []string {
-	sample := []string{}
+	// sample := []string{}
 
-	for i := 0; i < n*2; i++ {
-		sample = append(sample, ")")
-	}
-	sample[0] = "("
+	// for i := 0; i < n*2; i++ {
+	// 	sample = append(sample, ")")
+	// }
+	// sample[0] = "("
 
-	a := 1
+	// a := 1
 
 	// generateParenthesisHelp(1, 1, sample, n*2, *result)
 
