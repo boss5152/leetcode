@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func JudgeCircle(moves string) bool {
 	Px, Py := 0, 0

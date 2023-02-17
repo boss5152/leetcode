@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func RemoveDuplicates(nums []int) int {
 	repeat := []int{}

@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func NextGreaterElement(nums1 []int, nums2 []int) []int {
 	ans := []int{}

@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func NumJewelsInStones(jewels string, stones string) int {
 	jMap := map[rune]struct{}{}

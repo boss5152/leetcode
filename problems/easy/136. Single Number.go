@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func SingleNumber(nums []int) int {
 	m := make(map[int]struct{})

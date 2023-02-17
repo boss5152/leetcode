@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func MajorityElement(nums []int) int {
 	countMap := map[int]int{}

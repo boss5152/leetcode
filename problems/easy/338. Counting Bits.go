@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func CountBits(n int) []int {
 	ans := []int{}

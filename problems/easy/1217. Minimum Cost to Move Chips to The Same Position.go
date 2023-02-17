@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func MinCostToMoveChips(position []int) int {
 	odd, even := 0, 0

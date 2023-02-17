@@ -1,4 +1,4 @@
-package problems
+package medium
 
 func OnesMinusZeros(grid [][]int) [][]int {
 	colSum := make([]int, len(grid))

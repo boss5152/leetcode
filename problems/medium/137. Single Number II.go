@@ -1,4 +1,4 @@
-package problems
+package medium
 
 func SingleNumber2(nums []int) int {
 	m := make(map[int]int)

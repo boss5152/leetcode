@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func Intersection349(nums1 []int, nums2 []int) []int {
 	map1 := make(map[int]struct{})

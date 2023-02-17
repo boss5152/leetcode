@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func ReverseString(s []byte) []byte {
 	ans := []byte{}

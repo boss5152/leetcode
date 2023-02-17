@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func MinOperations(nums []int) int {
 	result := 0

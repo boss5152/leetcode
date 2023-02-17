@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func SortArrayByParity(nums []int) []int {
 	even := []int{}

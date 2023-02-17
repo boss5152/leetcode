@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func BalancedStringSplit(s string) int {
 	balance := 0

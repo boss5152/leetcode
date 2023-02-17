@@ -1,4 +1,4 @@
-package problems
+package easy
 
 func FindTheDifference(s string, t string) byte {
 	var result byte
