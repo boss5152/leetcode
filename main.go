@@ -30,6 +30,9 @@ func main() {
 		candidates := []int{2, 3, 6, 7}
 		target := 7
 		fmt.Println(easy.CombinationSum(candidates, target))
+	case 46:
+		nums := []int{1, 2, 3}
+		fmt.Println(medium.Permute(nums))
 	case 108:
 		slice := []int{-10, -3, 0, 5, 9}
 		fmt.Println(easy.SortedArrayToBST(slice))

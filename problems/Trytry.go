@@ -7,5 +7,7 @@ import (
 func Learn() {
 	slice1 := []string{"a", "b", "c", "d", "e"}
 
-	fmt.Println(slice1[3:])
+	slice1 = append(slice1[:1], slice1[1+1:]...)
+
+	fmt.Println(slice1)
 }
