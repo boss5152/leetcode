@@ -33,6 +33,13 @@ func main() {
 	case 46:
 		nums := []int{1, 2, 3}
 		fmt.Println(medium.Permute(nums))
+	case 48:
+		matrix := [][]int{
+			{1, 2, 3},
+			{4, 5, 6},
+			{7, 8, 9},
+		}
+		medium.Rotate(matrix)
 	case 108:
 		slice := []int{-10, -3, 0, 5, 9}
 		fmt.Println(easy.SortedArrayToBST(slice))
