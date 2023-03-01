@@ -40,6 +40,9 @@ func main() {
 			{7, 8, 9},
 		}
 		medium.Rotate(matrix)
+	case 49:
+		strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+		fmt.Println(medium.GroupAnagrams(strs))
 	case 108:
 		slice := []int{-10, -3, 0, 5, 9}
 		fmt.Println(easy.SortedArrayToBST(slice))
