@@ -43,6 +43,9 @@ func main() {
 	case 49:
 		strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
 		fmt.Println(medium.GroupAnagrams(strs))
+	case 59:
+		n := 3
+		fmt.Println(medium.GenerateMatrix(n))
 	case 108:
 		slice := []int{-10, -3, 0, 5, 9}
 		fmt.Println(easy.SortedArrayToBST(slice))
