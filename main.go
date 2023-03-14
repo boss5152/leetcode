@@ -46,6 +46,13 @@ func main() {
 	case 59:
 		n := 3
 		fmt.Println(medium.GenerateMatrix(n))
+	case 64:
+		grid := [][]int{
+			{1, 3, 1},
+			{1, 5, 1},
+			{4, 2, 1},
+		}
+		fmt.Println(medium.MinPathSum(grid))
 	case 108:
 		slice := []int{-10, -3, 0, 5, 9}
 		fmt.Println(easy.SortedArrayToBST(slice))
