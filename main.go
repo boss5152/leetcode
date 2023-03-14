@@ -46,6 +46,10 @@ func main() {
 	case 59:
 		n := 3
 		fmt.Println(medium.GenerateMatrix(n))
+	case 62:
+		m := 3
+		n := 7
+		fmt.Println(medium.UniquePaths(m, n))
 	case 64:
 		grid := [][]int{
 			{1, 3, 1},
