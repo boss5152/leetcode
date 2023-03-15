@@ -57,9 +57,15 @@ func main() {
 			{4, 2, 1},
 		}
 		fmt.Println(medium.MinPathSum(grid))
+	case 122:
+		prices := []int{2, 1, 2, 1, 0, 1, 2}
+		fmt.Println(medium.MaxProfit(prices))
 	case 108:
 		slice := []int{-10, -3, 0, 5, 9}
 		fmt.Println(easy.SortedArrayToBST(slice))
+	case 131:
+		s := "aab"
+		fmt.Println(medium.Partition(s))
 	case 136:
 		s := []int{2, 2, 1}
 		fmt.Println(easy.SingleNumber(s))
