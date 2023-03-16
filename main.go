@@ -64,7 +64,7 @@ func main() {
 		slice := []int{-10, -3, 0, 5, 9}
 		fmt.Println(easy.SortedArrayToBST(slice))
 	case 131:
-		s := "aab"
+		s := "ababbbabbaba"
 		fmt.Println(medium.Partition(s))
 	case 136:
 		s := []int{2, 2, 1}
