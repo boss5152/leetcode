@@ -20,6 +20,9 @@ func main() {
 	case 3:
 		s := "pwwkew"
 		fmt.Println(medium.LengthOfLongestSubstring(s))
+	case 12:
+		num := 3
+		fmt.Println(medium.IntToRoman(num))
 	case 22:
 		n := 3
 		fmt.Println(medium.GenerateParenthesis(n))
