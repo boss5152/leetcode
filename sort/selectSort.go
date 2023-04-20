@@ -3,15 +3,16 @@ package sort
 import "fmt"
 
 func SelectSort(nums []int) {
+	var min int
 	for i := 0; i < len(nums); i++ {
-		minId := i
+		min = i
 		for j := i + 1; j < len(nums); j++ {
-			if nums[minId] > nums[j] {
-				minId = j
+			if nums[min] > nums[j] {
+				min = j
 			}
 		}
 
-		nums[minId], nums[i] = nums[i], nums[minId]
+		nums[i], nums[min] = nums[min], nums[i]
 	}
 
 	fmt.Println(nums)

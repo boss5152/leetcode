@@ -3,15 +3,18 @@ package sort
 import "fmt"
 
 func InsertSort(nums []int) {
-	nSort := []int{nums[0]}
-	for v := range nums {
-		for i := 0; i < len(nSort); i++ {
-			if v < nSort[i] {
-				nSort = append(append(nSort[:i], v), nSort[i:]...)
-				break
+
+	for i := 1; i < len(nums); i++ {
+		j := i
+		for j > 0 {
+			if nums[j-1] > nums[j] {
+				nums[j-1], nums[j] = nums[j], nums[j-1]
 			}
+			j = j - 1
+
+			fmt.Println(nums)
 		}
 	}
 
-	fmt.Println(nSort)
+	fmt.Println(nums)
 }

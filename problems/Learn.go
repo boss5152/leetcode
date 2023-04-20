@@ -2,15 +2,31 @@ package problems
 
 import (
 	"fmt"
-	Drink "leetcode/struct/demo"
+	"sync"
 )
 
 func Learn() {
-	Coffee := Drink.Drink{
-		Name:  "Coffer",
-		Sweet: "Normal",
-		Ice:   "More",
-	}
+	ch := make(chan struct{})
+	wg := sync.WaitGroup{}
 
-	fmt.Println(Coffee)
+	wg.Add(2)
+	go func() {
+		defer wg.Done()
+		for i := 0; i < 100; i += 2 {
+			<-ch
+			fmt.Println(i)
+			ch <- struct{}{}
+		}
+	}()
+
+	go func() {
+		defer wg.Done()
+		for i := 1; i < 100; i += 2 {
+			ch <- struct{}{}
+			<-ch
+			fmt.Println(i)
+		}
+	}()
+
+	wg.Wait()
 }

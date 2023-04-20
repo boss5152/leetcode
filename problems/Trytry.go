@@ -18,8 +18,6 @@ func greet(c chan string) {
 }
 
 func Try() {
-	fmt.Println("main() started")
-
 	// a channel of data type channel of data type string
 	// 建立一個 channel 可以讀寫另一個（可以讀寫 string）的 channel
 	cc := make(chan chan string)
