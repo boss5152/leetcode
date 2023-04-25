@@ -167,7 +167,7 @@ func main() {
 			Sort.SelectSort(nums)
 		case "learn":
 			problems.Learn()
-		default:
+		case "try":
 			problems.Try()
 		}
 	}

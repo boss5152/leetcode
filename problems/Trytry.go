@@ -1,78 +1,73 @@
 package problems
 
-import (
-	"fmt"
-	"os"
-	"sync"
-)
+import "fmt"
 
-var numForLearn = 10
-var once sync.Once
-
-func greeter(cc chan chan string) {
-	c := make(chan string)
-	cc <- c
+type GameBlackList struct {
+	HallID map[int]HallList
 }
 
-func greet(c chan string) {
-	fmt.Println("Hello " + <-c + "!")
+type HallList struct {
+	TagIdList map[int]TagList
+}
+
+type TagList struct {
+	GameKind map[int][]int
+}
+
+type CatS struct {
+	C  []int
+	C1 map[int]int
+	C2 map[int][]int
+	C3 TagList
 }
 
 func Try() {
-	a := []int{4: 44, 22, 33, 1: 11, 55}
-
-	fmt.Println(cap(a), a[5])
-	os.Exit(1)
-	// a channel of data type channel of data type string
-	// 建立一個 channel 可以讀寫另一個（可以讀寫 string）的 channel
-	cc := make(chan chan string)
-
-	go greeter(cc)
-
-	c := <-cc
-
-	go greet(c)
-	c <- "John"
-
-	fmt.Println("main() stopped")
-}
-
-// main() started
-// Hello John!
-// main() stopped
-
-func chM() {
-	ch1, ch2 := make(chan int, numForLearn), make(chan int, numForLearn)
-	wg := &sync.WaitGroup{}
-	wg.Add(2)
-	go f1(ch1, wg)
-	go f2(ch1, ch2, wg)
-	wg.Wait()
-
-	for v := range ch2 {
-		fmt.Println(v)
-	}
-}
-
-func f1(ch1 chan int, wg *sync.WaitGroup) {
-	defer wg.Done()
-	for i := 0; i < numForLearn; i++ {
-		fmt.Println("1")
-		ch1 <- i
-	}
-	close(ch1)
-}
-
-func f2(ch1 chan int, ch2 chan int, wg *sync.WaitGroup) {
-	defer wg.Done()
-	for {
-		if v, ok := <-ch1; ok {
-			fmt.Println("2")
-			ch2 <- v * v
-		} else {
-			break
-		}
+	gbl := GameBlackList{
+		HallID: map[int]HallList{
+			6: {
+				TagIdList: map[int]TagList{
+					10062: {
+						GameKind: map[int][]int{
+							5: {60052, 60053},
+						},
+					},
+				},
+			},
+		},
 	}
 
-	once.Do(func() { close(ch2) })
+	fmt.Println(gbl)
+
+	tt := struct {
+		Hello []int
+		World map[int]int
+		Dog   map[int][]int
+		Cat   CatS
+	}{
+		Hello: []int{1, 2, 3},
+		World: map[int]int{
+			1: 1,
+		},
+		Dog: map[int][]int{
+			1: {1, 2, 3},
+		},
+		Cat: CatS{
+			C: []int{1, 2, 3},
+			C1: map[int]int{
+				1: 1,
+			},
+			C2: map[int][]int{
+				1: {
+					1,
+				},
+			},
+			C3: TagList{
+				GameKind: map[int][]int{
+					5: {60052, 60053},
+				},
+			},
+		},
+	}
+
+	fmt.Println(tt)
 }
