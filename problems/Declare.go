@@ -21,7 +21,7 @@ type CatS struct {
 	C3 TagList
 }
 
-func Try() {
+func Declare() {
 	gbl := GameBlackList{
 		HallID: map[int]HallList{
 			6: {

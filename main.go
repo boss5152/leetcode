@@ -77,6 +77,9 @@ func main() {
 		case "169":
 			nums := []int{3, 2, 3}
 			fmt.Println(easy.MajorityElement(nums))
+		case "191":
+			var num uint32 = 00000000000000000000000000001011
+			easy.HammingWeight(num)
 		case "242":
 			s := "anagram"
 			t := "nagaram"
@@ -117,6 +120,9 @@ func main() {
 		case "657":
 			s := "LL"
 			fmt.Println(easy.JudgeCircle(s))
+		case "709":
+			s := "Hello"
+			easy.ToLowerCase(s)
 		case "771":
 			jewels := "aA"
 			stones := "aAAbbbb"
@@ -169,6 +175,8 @@ func main() {
 			problems.Learn()
 		case "try":
 			problems.Try()
+		case "fish":
+			problems.Fish()
 		}
 	}
 }
