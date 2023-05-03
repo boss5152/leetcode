@@ -104,6 +104,9 @@ func main() {
 		case "412":
 			n := 15
 			fmt.Println(easy.FizzBuzz(n))
+		case "451":
+			s := "tree"
+			medium.FrequencySort(s)
 		case "496":
 			nums1 := []int{1, 3, 5, 2, 4}
 			nums2 := []int{5, 4, 3, 2, 1}
@@ -123,6 +126,9 @@ func main() {
 		case "709":
 			s := "Hello"
 			easy.ToLowerCase(s)
+		case "763":
+			s := "ababcbacadefegdehijhklij"
+			medium.PartitionLabels(s)
 		case "771":
 			jewels := "aA"
 			stones := "aAAbbbb"
