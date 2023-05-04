@@ -127,7 +127,7 @@ func main() {
 			s := "Hello"
 			easy.ToLowerCase(s)
 		case "763":
-			s := "ababcbacadefegdehijhklij"
+			s := "eccbbbbdec"
 			medium.PartitionLabels(s)
 		case "771":
 			jewels := "aA"

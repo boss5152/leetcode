@@ -3,8 +3,7 @@ package problems
 import "fmt"
 
 func Try() {
+	s := "0123456"
 
-	var z = []byte("Z")
-
-	fmt.Println(z)
+	fmt.Println(s[1:3])
 }
